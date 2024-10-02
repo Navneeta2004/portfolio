@@ -1,6 +1,5 @@
-# portfolio
-I have create my portfolio with html and css and it was my task in my college to develop a portfolio and host it with python anywhere
+Portfolio
+I have developed my personal portfolio using HTML and CSS as part of a college assignment. The objective was to create a visually appealing and functional representation of my skills, education, and projects.
 
-my host link is
-
-https://Navneeta.pythonanywhere.com/project
+You can view my portfolio live at the following link:
+https://navneeta2004.github.io/portfolio/
