@@ -1,180 +1,193 @@
 <!DOCTYPE html>
-<html>
-<title>Portfolio</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-.bgimg {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url('profimg.jpg');
-  min-height: 100%;
-}
-</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navneeta M - Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: "Aerial", sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+
+        header {
+            background: linear-gradient(135deg, #a4c8f0, #f0f5f7);
+            color: #343a40;
+            padding: 40px 0;
+            text-align: center;
+            border-bottom: 2px solid #007BFF;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.5em;
+            font-weight: 300;
+        }
+
+        .container {
+            padding: 50px;
+            max-width: 1000px; 
+            margin: 20px auto;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #007BFF;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #e9ecef;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        ul li:hover {
+            background: #d1e7fd;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 20px 0;
+            background: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: background 0.3s;
+        }
+
+        .button:hover {
+            background: #218838;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #a4c8f0, #f0f5f7);
+            color: #343a40;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1.2em;
+            }
+
+            .button {
+                font-size: 1em;
+            }
+
+            .container {
+                max-width: 90%; 
+            }
+        }
+    </style>
+</head>
 <body>
 
-<!-- Sidebar with image -->
-<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
-  <div class="bgimg"></div>
-</nav>
+<header>
+    <h1>Navneeta M</h1>
+    <p>Computer Technologist</p>
+    <a class="button" href="Resume_Navneeta_M.pdf" download>Download Resume</a> <!-- Moved button here -->
+</header>
 
-<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
-<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
-    <i class="fa fa-remove"></i>
-  </a>
-  <div class="w3-bar-block w3-center">
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
-    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
-  </div>
-</nav>
+<div class="container">
+    <h2>Education</h2>
+    <p><b>BTech Computer Technology</b> (Batch 2025 - BIT College)<br> CGPA: 8.04 (Upto 6th semester)</p>
+    <p><b>HSC</b> (Percentage: 94)<br> Jan 2021 - Jan 2022 - AVP Trust NMHSS</p>
+    <p><b>SSLC</b> (Percentage: 92)<br> Jan 2020 - Dec 2020 - AVP Trust NMHSS</p>
 
-<!-- Page Content -->
-<div class="w3-main w3-padding-large" style="margin-left:40%">
+    <h2>Achievements</h2>
+    <ul>
+        <li>Presented a project in VISAI 2023 (International SDG Projects Competition)</li>
+        <li>Presented papers at ICATRE22, ICAOCD-2022, and MCCT-2023</li>
+        <li>Won the Best Paper Award at MCCT-2023</li>
+    </ul>
 
-  <!-- Menu icon to open sidebar -->
-  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+    <h2>Skills</h2>
+    <ul>
+        <li>C, C++, Python</li>
+        <li>UI/UX, Web Development</li>
+        <li>Data Structures, Database Management</li>
+        <li>Angular Framework, Java</li>
+    </ul>
 
-  <!-- Header -->
-  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
-    <h1 class="w3-jumbo"><b>Navneeta M</b></h1>
-    <p>A Computer Technologist.</p>
-    <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
-    <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
-    <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
-        <a href="resume.pdf" download>
-          <i class="fa fa-download"></i> Download Resume
-        </a>
-      </button>
-      
-  </header>
+    <h2>Certifications</h2>
+    <ul>
+        <li>Elite Silver in NPTEL Cryptography and Network Security</li>
+        <li>Workshop on Embedded System AI (digiToad Technologies)</li>
+        <li>Completed Python for Data Science (Cognitive Ai)</li>
+    </ul>
 
-    <!-- About Section -->
-    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
-        <h2>About</h2>
-        <hr class="w3-opacity">
-        <p>Driven web developer specializing in IJI/UX design
-    and adept in modern web technologies. Dedicated
-    to delivering visually captivating websites and
-    applications that surpass client expectations.
-    Diligently stay abreast of industry trends to provide
-    innovative, user-centric solutions. Seeking a
-    challenging role to leverage creative skills and
-    technical expertise in creating impactful digital
-    experiences.
-        </p>
-        <h3 class="w3-padding-16">My Skills</h3>
-        <p class="w3-wide">Python</p>
-        <div class="w3-light-grey">
-          <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
-        </div>
-        <p class="w3-wide">Web Design</p>
-        <div class="w3-light-grey">
-          <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
-        </div>
-        <p class="w3-wide">Data Science</p>
-        <div class="w3-light-grey">
-          <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:75%">75%</div>
-        </div><br>
+    <h2>Projects</h2>
+    <p><b>Clean Water Prediction</b><br>Role: Team Leader | Duration: 3 months | Technologies: HTML, Python, Machine Learning<br>Description: Web application to check the portability of water using multiple parameters.</p>
+    <p><b>Handwritten Text Recognition</b><br>Role: Team Leader | Duration: 1 month | Technologies: HTML, Python, Machine Learning<br>Description: Recognized handwritten text using Microsoft's Tesseract OCR model.</p>
 
-    <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">3</span><br>
-        Projects
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">10+</span><br>
-        Certifications
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">7.73</span><br>
-        CGPA
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">5+</span><br>
-        Events Participation
-      </div>
-    </div>
+    <h2>Personal Skills</h2>
+    <ul>
+        <li>Multitasking</li>
+        <li>Adaptability</li>
+        <li>Critical Thinking</li>
+        <li>Punctuality</li>
+    </ul>
 
-    <!-- Testimonials -->
-    <h3 class="w3-padding-24">My Projects</h3>
-    <img src="cleanwaterprediction.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-text-black w3-margin-right">Clean Water Prediction</span> Html, Python,Machin
-        learning</p>
-    <p></p> Web application where we could
-        check the portability of water using 8 to 9
-        parameters.</p><br>
-    
-    <img src="emo player.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-text-black w3-margin-right">Emo Player</span>  Html , Javascript,
-        Python,Machine learning, Flask.</p>
-    <p>Description: A music player which detects the emotions
-        of the user and plays music based on those emotions.</p><br>
-    
-    
-  <!-- End About Section -->
-  </div>
+    <h2>Languages</h2>
+    <ul>
+        <li>Tamil (R, W, S)</li>
+        <li>English (R, W, S)</li>
+        <li>Telugu (S)</li>
+    </ul>
 
-  <!-- Contact Section -->
-  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
-    <h2>Contact Me</h2>
-    <hr class="w3-opacity">
+    <h2>Hobbies</h2>
+    <ul>
+        <li>Pencil Sketching</li>
+        <li>Learning Tech</li>
+        <li>Photography</li>
+        <li>Listening to Music</li>
+    </ul>
 
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Tiruppur,Tamil Nadu</p>
-      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +91 9363288841</p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: navneeta.ct21@bitsathy.ac.in</p>
-    </div>
-    
-   
-    <p>Lets get in touch. Send me a message:</p>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-  <!-- End Contact Section -->
-  </div>  
-  
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
-    <a href="https://www.instagram.com/navneeta7181" target="_blank" class="w3-hover-opacity">
-      <i class="fa fa-instagram"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/navneeta-m-790a85246" target="_blank" class="w3-hover-opacity">
-      <i class="fa fa-linkedin"></i>
-    </a>
-  <!-- End footer -->
-  </footer>
-  
-<!-- END PAGE CONTENT -->
+    <h2>Contact</h2>
+    <p>Email: navneeta.ct21@gmail.com</p>
+    <p>Phone: +91 9363288841</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/navneeta-m-790a85246" target="_blank">linkedin.com/in/navneeta-m</a></p>
+    <p>GitHub: <a href="https://github.com/Navneeta2004" target="_blank">github.com/Navneeta2004</a></p>
 </div>
 
-<script>
-// Open and close sidebar
-function openNav() {
-  document.getElementById("mySidebar").style.width = "60%";
-  document.getElementById("mySidebar").style.display = "block";
-}
-
-function closeNav() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-</script>
+<footer>
+    <p>© 2024 Navneeta M</p>
+</footer>
 
 </body>
 </html>
